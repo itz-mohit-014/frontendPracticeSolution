@@ -134,13 +134,21 @@
 .hamburger-menu{
     display:none;
     flex-direction: column;
-    gap:5px;
+    justify-content: center;
+    align-items: center;
+    gap:6px;
+    height: 40px;
+    width: 40px;
     padding:5px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
     cursor: pointer;
+    position: relative;
+    z-index: 2;
 }
 .lines{
-    height:4px;
-    width:30px;
+    height:3px;
+    width:25px;
     border-radius: 4px;
     background-color: var(--dark-gray);
     transition-property: translate, rotate 250ms 250ms, opacity;
@@ -422,6 +430,7 @@
         color:var(--white) ;
     } 
 
+
     .footer{
         flex-wrap: wrap;}
     .col{
@@ -440,10 +449,6 @@
 
 @media only screen and ( width <= 599px) {
 
-    .tour-section{
-        padding: 10vh 1rem;
-    }
-
     .inner-section  .btn{
         scale: 1;
     }
@@ -456,6 +461,7 @@
         line-height:1.7rem; 
     }
     .author-details{
+        font-size: 0.7rem;
         line-height: 1.5rem;
     }
 }
